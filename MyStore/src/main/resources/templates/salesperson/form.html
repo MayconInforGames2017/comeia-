@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt" 
+	xmlns:th="http://thymeleaf.org"
+	>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fomulário de Vendedor</title>
+</head>
+<body>
+	<h1>Cadastrar Vendedores</h1>
+	<form th:action="@{/salesperson/save}" th:object="${salesperson}" method="post" >
+		<input type="hidden" th:field="*{id}" />
+		<label for="name">Nome: </label>
+		<input type="text" id="name" th:field="*{name}" />
+		<span th:errors="*{name}"></span>
+		<br/><br/>
+		<input type="submit" value="Salvar" />
+	</form>
+</body>
+</html>
+

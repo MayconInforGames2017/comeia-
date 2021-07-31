@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt"
+	xmlns:th="http://thymeleaf.org"
+	>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedores</title>
+</head>
+<body>
+    <h1>Lista de Vendedores</h1>
+    <br/>
+    <a href="/salesperson/new">Cadastrar Novo Vendedor</a>
+    <br/>
+    <h3 th:if="${message} != null" th:text="S{message}"></h3>
+    <table>
+    	<thead>
+    		<tr>
+    			<th>ID</th>
+    			<th>Nome</th>
+    			<th>Ações</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr th:each="salesperson : ${salespersons}">
+    			<td th:text="${salesperson.id}"></td>
+    			<td th:text="${salesperson.name}"></td>
+    			<td>
+    				<a th:href="@{/salesperson/edit/{id} (id=${salesperson.id}) }">Editar</a>
+    				<a th:href="@{/salesperson/delete/{id} (id=${salesperson.id}) }">Excluir</a>
+    			</td>
+    		</tr>
+    	</tbody>
+    </table>
+</body>
+</html>
+
