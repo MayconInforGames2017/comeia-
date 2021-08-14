@@ -14,6 +14,6 @@ export async function up(knex: Knex) {
     });
 }
 
-export async function name(knex: Knex) {
+export async function down(knex: Knex) {
     return knex.schema.dropTable('locations_items');
 }
