@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+
+        <meta name="author" content="Maycon Santana">
+
+        <meta name="description" content="Este site contém um formulário de inscrição">
+
+        <!-- Não funciona para mecanismos de busca -->
+        <meta name="keywords" content="Preencha, Fomulário, Dados Cadastrais">
+
+        <title>Meu Projeto 01 - Contato</title>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <img src="game.jpg" width="80px">
+            <h1>Formulário Contato</h1>
+            <h2>Iniciar</h2>
+        </header>
+        
+        <nav>
+            <ul id="menu-h">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="blog.html"">Blog</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>  
+            <button type="menu" onclick="http://google.com">Google</button>
+        </nav>
+
+        <main>
+
+            <section>
+                <form action="mensagem.html">
+                    <div>
+                        <input type="text" placeholder="Seu nome" name="nome" value="" required>
+                    </div>
+                    <div>
+                        <input type="tel" name="telefone" placeholder="(**) *****-****" value="" required>
+                    </div>
+                    <div>
+                        <input type="url" name="site" placeholder="Seu website" value="" required>
+                    </div>                       
+                    <div>
+                        <input type="datetime-local" name="data-nascimento" id="data">
+                    </div>
+                    <div>
+                        <input type="email" name="email" required placeholder="Seu e-mail" value="">
+                    </div>
+                    <div>
+                        <input type="number" name="idade" min="0" max="99" label="teste">
+                    </div> 
+                    <div>
+                        <input type="file" name="fotos" accept="image/*" multiple>
+                        <progress max="100" value="75" id="progressbar"></progress> 
+                    </div>
+                    <div>
+                        <label for="funcionarios">Número de Funcionários</label>
+                        <input type="range" name="fucionarios" id="func" min="0" max="10" step="5">
+                        <span id="func-select">1</span>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Nível Escolar</legend>
+                                <ul>
+                                    <li>
+                                        <label for="">Ensino Fundamental</label>
+                                        <input type="radio" id="EnsFun" name="niv-esc" value="Ensino Fundamental">
+                                    </li>
+                                    <li>
+                                        <label for="">Ensino Médio</label>
+                                        <input type="radio" id="EnsMed" name="niv-esc" value="Ensino Medio">
+                                    </li>
+                                    <li>
+                                        <label for="">Ensino Superior</label>
+                                        <input type="radio" id="EnsSup" name="niv-esc" value="Ensino Superior">
+                                    </li>
+                                </ul>
+                        </fieldset>
+                    </div>
+                    
+                    <div>
+                        <h4>Regiões de atendimento</h4>
+                        <label>Região Norte</label>
+                        <input type="checkbox" id="no" name="regioes" value="Norte">
+                        <label>Região Nordeste</label>
+                        <input type="checkbox" id="no" name="regioes" value="Nordeste">
+                        <label>Região Centro_Oeste</label>
+                        <input type="checkbox" id="no" name="regioes" value="Centro-Oeste">
+                        <label>Região Sudeste</label>
+                        <input type="checkbox" id="no" name="regioes" value="Sudeste">
+                        <label>Região Sul</label>
+                        <input type="checkbox" id="no" name="regioes" value="Sul">
+                    </div>
+
+                    <div>
+                        <button type="submit">Enviar </button>
+                        <input type="reset" value="Limpar Dados">
+                    </div>
+                </form>
+            </section>
+
+        </main>
+        
+        <aside>
+            <ul>
+                <li>Xbox 360</li>
+                <li>Xbox One</li>
+                <li>Xbox Series S</li>
+                <li>Xbox Series X</li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p>Desenvolvido por MayconSantana</p>
+            <p><a href="https://www.facebook.com/MayconRSantana/" >MayconInforgames</a></p>
+        </footer>
+
+    </body>
+</html>

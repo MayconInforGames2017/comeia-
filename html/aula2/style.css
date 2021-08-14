@@ -1,0 +1,38 @@
+p {
+    font-family: Arial;
+    color: blue;
+    text-align: center;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: brown;
+}
+
+em {
+    font-weight: bold;
+    color: purple;
+}
+
+#menu-h {
+    list-style: none;
+    padding: 0;
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h li{
+    display: inline-block;
+    padding: 20px;
+}
+
+#menu-h li a {
+    color: #fff;
+    display: inline;
+    text-decoration: none;
+    transition: background .6s;
+}
+
+#menu-h li a:hover {
+    color: rgb(24, 139, 233);
+}

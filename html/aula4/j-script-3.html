@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Meu terceiro JavaSript</title>
+
+    </head>
+    <body>
+        <h2 id="text2">Meu estilo CSS com JavaScript</h2>
+        <P id="text">Olá, eu sou HTML puro</P>
+        
+        <button id="myButton">Clique aqui para adicionar um texto</button>
+        <button id="myStyle">Clique aqui para adicionar um estilo</button>
+  
+        <script text="text/javascript">
+            document.getElementById('myButton').onclick = function() {
+                document.getElementById('text').innerHTML = 'Eu sou JavaScript' 
+            }  
+            document.getElementById('myStyle').onclick = function() {
+                document.getElementById('text2').style.color = 'red'
+                document.getElementById('text2').style.fontFamily = 'Arial'
+                document.getElementById('text2').style.fontSize = '20px'
+            }
+
+        </script>
+
+    </body>
+</html>

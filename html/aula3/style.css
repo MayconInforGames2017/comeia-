@@ -1,0 +1,103 @@
+p {
+    font-family: Arial;
+    color: blue;
+    text-align: center;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: brown;
+}
+
+em {
+    font-weight: bold;
+    color: purple;
+}
+
+.p-center {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: initial;
+    text-align: center;
+    color: darkblue;
+}
+
+.em-center {
+    color: blue;
+}
+
+.tit-princ {
+    color: blueviolet;
+}
+
+#sub-tit {
+    color: gray;
+}
+
+a {
+    font-family: Arial;
+    font-size: 12px;
+    color: white;
+    background-color: indigo;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+a:hover {
+    color: indigo;
+    background-color: gray;
+}
+
+a:active {
+    background-color: yellow;
+}
+
+.minha-div {
+    width: 400px;
+    height: 100px;
+    background-color: violet;
+    margin: 40px;
+    padding: 30px;
+}
+
+.meu-article {
+    width: 400px;
+    padding: 10px 0 30px 50px;
+    margin: 200px 8 0 100px;
+    box-shadow: 20px 20px 10px gray;
+    border-radius: 10px;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 12px; 
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: darkblue;
+    color: white;
+}
+
+.tb-colorida td {
+    background-color: turquoise;
+}
+
+.tb-colorida td:nth-last-child(2) {
+    width: 230px;
+    background-color: tomato;
+}
+
+.tb-colorida td:nth-last-child(4) {
+    width: 100px;
+    text-align: right;
+}
